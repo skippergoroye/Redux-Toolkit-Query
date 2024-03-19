@@ -6,7 +6,7 @@ const AddNewProduct = () => {
 
   const [addNewProduct, { data, isError, isLoading }] =
     useAddNewProductMutation();
-  console.log(addNewProduct);
+  // console.log(addNewProduct);
 
   if (isError) {
     return <h1>Error</h1>;
