@@ -2,8 +2,8 @@ import React from "react";
 import { useGetAllProductQuery } from "../features/api/productApiSlice";
 
 const AllProducts = () => {
-  // const res = useGetAllProductQuery()
-  // console.log(res)
+  const res = useGetAllProductQuery()
+  console.log(res)
 
 
   const { data, isError, isLoading } = useGetAllProductQuery();
