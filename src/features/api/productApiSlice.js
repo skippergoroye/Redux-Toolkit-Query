@@ -1,8 +1,6 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { apiSlice } from "./apiSlice";
 
-export const productsApi = createApi({
-  reducerPath: "products",
-  baseQuery: fetchBaseQuery({ baseUrl: "https://dummyjson.com" }),
+export const productsApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     getAllProduct: builder.query({
       query: () => "/products",
@@ -26,14 +24,12 @@ export const productsApi = createApi({
         body: updatedProduct,
       }),
     }),
-
     deleteProduct: builder.mutation({
       query: (id) => ({
         url: `/products/${id}`,
         method: "DELETE",
       }),
-      })
-    
+    }),
   }),
 });
 
@@ -41,6 +37,6 @@ export const {
   useGetAllProductQuery,
   useGetProductByIdQuery,
   useAddNewProductMutation,
-  useUpdateProductMutation, 
-  useDeleteProductMutation,  
-} = productsApi
+  useUpdateProductMutation,
+  useDeleteProductMutation,
+} = productsApi;

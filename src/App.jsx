@@ -11,11 +11,11 @@ function App() {
 
   return (
    <>
-    {/* <AllProducts /> */}
+    <AllProducts />
     {/* <SpecificProducts /> */}
     {/* <AddNewProduct /> */}
-    {/* <UpdateProduct productId={2} /> */}
-    <DeleteProduct productId={2} />
+    {/* <UpdateProduct productId="2" /> */}
+    {/* <DeleteProduct productId={2} /> */}
    </>
   )
 }

@@ -1,7 +1,7 @@
 import {useGetProductByIdQuery } from "../features/api/productApiSlice"
 
 const SpecificProducts = () => {
-  const { data, isError, isLoading} = useGetProductByIdQuery(6)
+  const { data, isError, isLoading} = useGetProductByIdQuery(9)
   console.log(data)
 
 
