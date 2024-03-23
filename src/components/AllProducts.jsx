@@ -1,5 +1,5 @@
 import React from "react";
-import { useGetAllProductQuery } from "../features/api/productApiSlice";
+import { useGetAllProductQuery } from "../features/api/products";
 
 const AllProducts = () => {
   const res = useGetAllProductQuery()

@@ -1,4 +1,4 @@
-import { useUpdateProductMutation } from "../features/api/productApiSlice"
+import { useUpdateProductMutation } from "../features/api/products"
 
 
 const UpdateProduct = ({ productId }) => {

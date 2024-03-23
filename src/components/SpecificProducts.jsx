@@ -1,4 +1,4 @@
-import {useGetProductByIdQuery } from "../features/api/productApiSlice"
+import {useGetProductByIdQuery } from "../features/api/products"
 
 const SpecificProducts = () => {
   const { data, isError, isLoading} = useGetProductByIdQuery(9)

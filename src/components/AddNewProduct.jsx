@@ -1,4 +1,4 @@
-import { useAddNewProductMutation } from "../features/api/productApiSlice";
+import { useAddNewProductMutation } from "../features/api/products";
 
 const AddNewProduct = () => {
   // const res = useAddNewProductMutation()

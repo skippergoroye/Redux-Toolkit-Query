@@ -1,4 +1,4 @@
-import { useDeleteProductMutation } from "../features/api/productApiSlice"
+import { useDeleteProductMutation } from "../features/api/products"
 
 const DeleteProduct = ({ productId }) => {
     const [deleteProduct, {data, isError, isLoading}] = useDeleteProductMutation()

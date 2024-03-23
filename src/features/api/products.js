@@ -1,6 +1,6 @@
 import { apiSlice } from "./apiSlice";
 
-export const productsApi = apiSlice.injectEndpoints({
+export const productsApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     getAllProduct: builder.query({
       query: () => "/products",
@@ -39,4 +39,4 @@ export const {
   useAddNewProductMutation,
   useUpdateProductMutation,
   useDeleteProductMutation,
-} = productsApi;
+} = productsApiSlice;
